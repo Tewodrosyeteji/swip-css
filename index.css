@@ -4,8 +4,8 @@
   --text-gray: #adbdcc;
   --body-font: "Roboto", sans-serif;
   --heading-font: "Anek Telugu", sans-serif;
-  --h1-size: 92px;
-  --h1-height: 108px;
+  --h1-size: 79px;
+  --h1-height: 100px;
   --h2-size: 50px;
   --h2-height: 75px;
   --h3-size: 40px;
@@ -19,7 +19,7 @@
   --secondary-text-size: 14px;
   --secondery-text-height: 16px;
   --primary-button-size: 16px;
-  --standard-width: 1100px;
+  --standard-width: 950px;
 
   --spacing-sm: 8px;
   --spacing-md: 16px;
@@ -35,6 +35,13 @@
   --bg-light: #f7f9fc;
 
   --standard-box-shadow: 0px 2px 40px rgb(0, 0, 0, 0.15);
+  --primary-gradient: linear-gradient(
+    100.33deg,
+    #08209a 0.76%,
+    #6563ff 33.3%,
+    #36c5f0 76.92%,
+    #83e2ff 96.96%
+  );
 }
 body {
   font-family: var(--body-font);
@@ -287,6 +294,12 @@ main {
   margin: 0 0 0 var(--spacing-md);
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero p {
   max-width: 500px;
 }
@@ -299,6 +312,12 @@ main {
 .hero-phone {
   height: 614px;
   transform: translate(46px, -32px);
+}
+
+.partners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .partners-grid {
   margin: var(--spacing-xl) 0;
@@ -316,6 +335,9 @@ main {
 /* unified plantform */
 .unified-platform-container {
   margin: var(--spacing-xl) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .unified-platform-container h3 {
@@ -333,6 +355,11 @@ main {
 }
 
 /* graphics section */
+.graphics-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .graphics-grid {
   display: grid;
@@ -340,12 +367,8 @@ main {
     "card slack slack"
     "phone slack slack"
     "phone dash dash";
-  gap: var(--spacing-lg);
+  gap: var(--spacing-md);
 }
-
-/* .graphics-grid img {
-  height: 500px;
-} */
 
 #credit-card {
   grid-area: card;
@@ -375,6 +398,9 @@ main {
 .integration-container {
   color: var(--text-light);
   background-color: var(--primary-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .integration-container .card-container {
   display: flex;
@@ -407,6 +433,11 @@ main {
 }
 
 /* swipe section */
+.why-swip-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .why-swip-section .card-container {
   display: flex;
@@ -420,4 +451,178 @@ main {
 
 .why-swip-section .card p {
   font-size: 14px;
+}
+
+/* global section */
+
+main {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.global-section {
+  background-color: var(--primary-accent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-light);
+  position: relative;
+}
+
+.global-section .two-column {
+  margin: calc(var(--spacing-xl) * 2) 0 0 0;
+}
+
+.global-section a {
+  color: var(--blue-1);
+}
+
+.global-section a:hover {
+  color: var(--text-light);
+}
+
+.global-section .card-container {
+  display: flex;
+  margin: var(--spacing-xl) 0;
+}
+
+.global-section .card {
+  width: 50%;
+  margin: 0 var(--spacing-md) 0 0;
+  padding: 0 var(--spacing-sm) 0 0;
+  box-sizing: border-box;
+}
+
+.global-section .card h6 {
+  border-left: 2px solid var(--blue-1);
+  padding: 0 0 0 var(--spacing-sm);
+  line-height: 30px;
+}
+
+#glob {
+  max-width: 604px;
+  opacity: 25%;
+  position: absolute;
+  top: 17%;
+}
+
+.virtual-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--spacing-xl) 0;
+}
+
+.virtual-section .primary-button {
+  background-color: var(--purple-1);
+  margin: var(--spacing-md) 0 0 0;
+}
+
+.virtual-section .primary-button:hover {
+  background-color: var(--primary-accent);
+}
+
+.swipe-sessions {
+  width: 440px;
+  height: 336px;
+  box-shadow: var(--standard-box-shadow);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0 0 var(--spacing-lg) 0;
+}
+.swipe-sessions .two-column .col-left {
+  width: 336px;
+  padding: 0 100px 0 0;
+}
+.swipe-sessions .top-section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swipe-sessions .top-section::before {
+  background: var(--primary-gradient);
+  content: "";
+  width: 100%;
+  height: 150%;
+  transform: skewY(-5deg);
+  position: absolute;
+  top: -50px;
+  z-index: 1;
+}
+
+#session-logo {
+  z-index: 2;
+  width: 232px;
+}
+
+.swipe-sessions .avatars {
+  position: absolute;
+  z-index: 3;
+  bottom: -70px;
+  left: var(--spacing-xl);
+}
+
+.swipe-sessions .avatars img {
+  width: 80px;
+}
+
+.swipe-sessions .avatars img:nth-child(2) {
+  position: absolute;
+  left: 55px;
+}
+
+.swipe-sessions .bottom-section {
+  width: 100%;
+  height: 50%;
+  padding: var(--spacing-xl);
+  box-sizing: border-box;
+}
+
+.swipe-sessions .bottom-section .secondary-text {
+  color: var(--text-dark);
+  width: 75%;
+  font-weight: bold;
+}
+
+/* GET started section */
+
+.get-started-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--spacing-lg) 0;
+}
+
+.get-started-section .col-right .card-container {
+  display: flex;
+}
+
+.get-started-section .card {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-sm) 0 0;
+  margin: 0 var(--spacing-md) 0 0;
+}
+
+.get-started-section .primary-button {
+  color: var(--purple-1);
+  margin: var(--spacing-sm) 0;
+}
+
+.get-started-section .primary-button:hover {
+  color: var(--primary-accent);
+}
+
+.get-started-section .col-left {
+  margin: 0 var(--spacing-md) 0 0;
+}
+.get-started-section .secondary-button {
+  color: var(--purple-2);
 }
